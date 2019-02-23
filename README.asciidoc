@@ -1,0 +1,29 @@
+= Ymf825.Spi
+
+Ymf825.Spi provides access to link:https://yamaha-webmusic.github.io/ymf825board/intro/[YMF825Board] functionality for link:https://dotnet.github.io/[.NET Core] **based on link:https://www.nuget.org/packages/System.Device.Gpio/[System.Device.*] APIs**. :notes:
+
+== :bulb: Introduction
+
+This library provides additional components for link:https://github.com/nanase/ymf825[nanase/Ymf825].
+It uses _pre-released_ link:https://www.nuget.org/packages/System.Device.Gpio/[System.Device.*] APIs to access GPIO pins and SPI bus.
+
+It is intended to operate the YMF825Board from devices that have support SPI natively such as Raspberry Pi.
+
+If you want to use YMF825Board from PC *over USB-SPI adapter*, you should use the Ymf825 built-in components such as link:https://github.com/nanase/ymf825/blob/feature/2.0/Ymf825/IO/AdafruitFt232hInterface.cs[AdafruitFt232HInterface] class and no need to use this library.
+
+== :heavy_check_mark: Supported Device
+
+- Raspberry Pi 3 Model B
+- Raspbian
+- link:https://yamaha-webmusic.github.io/ymf825board/intro/[YMF825Board] rev.A
+
+== :hammer_and_wrench: Requirements
+
+- .NET Core 2.1 or later
+- link:https://github.com/nanase/ymf825[nanase/Ymf825] 2.0.0 (not compatible with 1.0.0)
+
+== :black_nib: License
+
+Copyright © 2019 Kimura Youichi
+
+This software is licensed under link:./LICENSE[Apache License, Version 2.0].
